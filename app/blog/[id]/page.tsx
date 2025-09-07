@@ -3,7 +3,7 @@ import HeroSection from "@/app/components/HeroSection";
 import React, { useEffect, useState } from "react";
 import service_heror from "@/public/images/service_hero.jpeg";
 import { useParams } from "next/navigation";
-import { TPortfoliotype } from "@/app/@types/portfolioTypes";
+import { TPortfoliotype } from "@/app/pageTypes/portfolioTypes";
 import portfolioData from "@/public/data/portfolio.json";
 import Link from "next/link";
 

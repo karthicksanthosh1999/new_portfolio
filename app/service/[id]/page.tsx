@@ -5,7 +5,7 @@ import services from "@/public/data/service.json";
 import ContactForm from "./components/contactForm";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
-import { TServiceType } from "@/app/@types/serviceType";
+import { TServiceType } from "@/app/pageTypes/serviceType";
 import Image from "next/image";
 import HeroSection from "@/app/components/HeroSection";
 

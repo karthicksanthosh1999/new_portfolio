@@ -3,7 +3,7 @@ import HeroSection from "@/app/components/HeroSection";
 import React, { useEffect, useState } from "react";
 import service_heror from "@/public/images/service_hero.jpeg";
 import { useParams } from "next/navigation";
-import { TBlogtype } from "@/app/@types/blogs";
+import { TBlogtype } from "@/app/pageTypes/blogs";
 import blogs from "@/public/data/blogs.json";
 import RecentPosts from "../components/RecentPosts";
 import { Separator } from "@/components/ui/separator";
