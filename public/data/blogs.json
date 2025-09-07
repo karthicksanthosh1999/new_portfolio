@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "The Role of Technology in Modern Logistics Management",
+    "type": "Development",
+    "date": "Oct 01, 2025",
+    "command": "4",
+    "image": "/images/blog-3.webp",
+    "description": [
+      "Welcome to our blog, where we celebrate our achievement as an AWS SaaS Competency Partner and share insights on how we accomplished this significant milestone.",
+      "As businesses unlock growth opportunities in the digital age, harnessing the power of cloud computing has become essential. Amazon Web Services (AWS) offers the AWS SaaS Competency Partner program, recognizing companies with exceptional expertise in delivering Software-as-a-Service solutions on the AWS platform.",
+      "In this blog, we will delve into the strategies, best practices, and key factors that accelerated our business growth and earned us the prestigious AWS SaaS Competency Partner status."
+    ],
+    "keyPoints": [
+      "IoT and Real-Time Tracking",
+      "Artificial Intelligence in Route Optimization and Predictive Analytics",
+      "Blockchain for Enhanced Transparency and Security",
+      "Warehouse Automation and Robotics"
+    ],
+    "conclusion": [
+      "Emphasize the long-term benefits of integrating sustainable practices into logistics operations, both for the planet and a company's reputation.",
+      "These outlines can be expanded into comprehensive blog posts, each providing valuable insights and information on the respective topics."
+    ],
+    "tags": ["React JS", "Express", "Node JS", "Design", "PostgreSQL"]
+  },
+  {
+    "id": "2",
+    "title": "Digital Marketo to Their New Office.",
+    "tags": ["AI"],
+    "type": "AI",
+    "date": "Oct 01, 2025",
+    "command": "4",
+    "image": "/images/blog-4.webp",
+    "description": [
+      "Welcome to our blog, where we celebrate our achievement as an AWS SaaS Competency Partner and share insights on how we accomplished this significant milestone.",
+      "As businesses unlock growth opportunities in the digital age, harnessing the power of cloud computing has become essential. Amazon Web Services (AWS) offers the AWS SaaS Competency Partner program, recognizing companies with exceptional expertise in delivering Software-as-a-Service solutions on the AWS platform.",
+      "In this blog, we will delve into the strategies, best practices, and key factors that accelerated our business growth and earned us the prestigious AWS SaaS Competency Partner status."
+    ],
+    "keyPoints": [
+      "IoT and Real-Time Tracking",
+      "Artificial Intelligence in Route Optimization and Predictive Analytics",
+      "Blockchain for Enhanced Transparency and Security",
+      "Warehouse Automation and Robotics"
+    ],
+    "conclusion": [
+      "Emphasize the long-term benefits of integrating sustainable practices into logistics operations, both for the planet and a company's reputation.",
+      "These outlines can be expanded into comprehensive blog posts, each providing valuable insights and information on the respective topics."
+    ]
+  }
+]

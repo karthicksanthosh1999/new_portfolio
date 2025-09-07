@@ -1,0 +1,121 @@
+{
+  "title": "Portfolio",
+  "portfolios": [
+    {
+      "id": "1",
+      "title": "Deloitte",
+      "image": "/images/portfolio_1.webp",
+      "tabDescription": "Project about small application",
+      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
+      "category": "Web Design",
+      "client": "Artboard Studio",
+      "startDate": "August 20, 2023",
+      "endDate": "November 20, 2023",
+      "designer": "ThemeJunction",
+      "livePreviewLink": "http//:google.com",
+      "sliderImages": ["", "", "", ""],
+      "projectDescriptionTitle": "Project Description",
+      "projectDescription": [
+        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+      ],
+      "categoeys": [
+        {
+          "title": "The story",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        },
+        {
+          "title": "OUR APPROACH",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "New Age",
+      "image": "/images/portfolio_2.webp",
+      "tabDescription": "Project about small application",
+      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
+      "category": "Web Design",
+      "Client": "Artboard Studio",
+      "start Date": "August 20, 2023",
+      "end Date": "November 20, 2023",
+      "designer": "ThemeJunction",
+      "livePreviewLink": "http//:google.com",
+      "sliderImages": ["", "", "", ""],
+      "projectDescriptionTitle": "Project Description",
+      "projectDescription": [
+        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+      ],
+      "categoeys": [
+        {
+          "title": "The story",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        },
+        {
+          "title": "OUR APPROACH",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Sebastian",
+      "image": "/images/portfolio_3.webp",
+      "tabDescription": "Project about small application",
+      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
+      "category": "Web Design",
+      "Client": "Artboard Studio",
+      "start Date": "August 20, 2023",
+      "end Date": "November 20, 2023",
+      "designer": "ThemeJunction",
+      "livePreviewLink": "http//:google.com",
+      "sliderImages": ["", "", "", ""],
+      "projectDescriptionTitle": "Project Description",
+      "projectDescription": [
+        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+      ],
+      "categoeys": [
+        {
+          "title": "The story",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        },
+        {
+          "title": "OUR APPROACH",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Mochnix",
+      "image": "/images/portfolio_4.webp",
+      "tabDescription": "Project about small application",
+      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
+      "category": "Web Design",
+      "Client": "Artboard Studio",
+      "start Date": "August 20, 2023",
+      "end Date": "November 20, 2023",
+      "designer": "ThemeJunction",
+      "livePreviewLink": "http//:google.com",
+      "sliderImages": ["", "", "", ""],
+      "projectDescriptionTitle": "Project Description",
+      "projectDescription": [
+        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+      ],
+      "categoeys": [
+        {
+          "title": "The story",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        },
+        {
+          "title": "OUR APPROACH",
+          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        }
+      ]
+    }
+  ]
+}

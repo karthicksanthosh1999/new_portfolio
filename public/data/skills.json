@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "icons": "./images/skill_1.png",
+    "title": "ReactJS",
+    "category": "Frontend",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "2",
+    "icons": "./images/skill_2.png",
+    "title": "Postgres-SQL",
+    "category": "Backend",
+    "color": "#fff",
+    "percentage": "70"
+  },
+  {
+    "id": "3",
+    "icons": "./images/skill_5.png",
+    "title": "TypeScript",
+    "category": "Fontend",
+    "color": "#000",
+    "percentage": "90"
+  },
+  {
+    "id": "4",
+    "icons": "./images/skill_4.png",
+    "title": "HTML",
+    "category": "Fontend",
+    "color": "#ccc",
+    "percentage": "80"
+  }
+]
