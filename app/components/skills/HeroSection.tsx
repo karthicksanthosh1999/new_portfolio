@@ -39,7 +39,7 @@ export default function HeroSection() {
             </div>
             <div>
               <h1 className="md:text-6xl text-5xl bg-gradient-to-r py-3 from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text font-extrabold">
-                Next-Level Software Engineer
+                Next-Level Software Developer
               </h1>
             </div>
             <div>

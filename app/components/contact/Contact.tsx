@@ -90,7 +90,7 @@ const Contact = () => {
               <div
                 className="flex items-end justify-start md:gap-10 gap-2"
                 key={idx}>
-                <div className="rounded-full p-4 bg-linear-to-r from-[#8750f7] via-10% to-blue-950">
+                <div className="rounded-full p-4 bg-linear-to-r from-[#8750f7] via-10% to-blue-950 text-white">
                   {item.icon}
                 </div>
                 <div className="max-w-full">

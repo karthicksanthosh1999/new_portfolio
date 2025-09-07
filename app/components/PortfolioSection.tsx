@@ -17,14 +17,14 @@ const PortfolioSection = () => {
     <>
       <div className="flex items-center justify-center flex-col space-y-3">
         <div>
-          <h1 className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-1">
-            My Recent Work
+          <h1 className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-2">
+            My Projects
           </h1>
         </div>
         <div>
           <p className="text-white text-[17px] text-center w-full md:w-[700px] px-5">
-            We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you and you customers.
+            Building modern web applications with React and Next.js for seamless
+            user experiences.
           </p>
         </div>
       </div>

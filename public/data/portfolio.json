@@ -3,117 +3,188 @@
   "portfolios": [
     {
       "id": "1",
-      "title": "Deloitte",
-      "image": "/images/portfolio_1.webp",
-      "tabDescription": "Project about small application",
-      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
+      "title": "Logistics",
+      "breadcrumbs": [
+        {
+          "title": "Home",
+          "link": "/"
+        },
+        {
+          "title": "Logistics",
+          "link": "/blog/1"
+        }
+      ],
+      "image": "/images/portfolio_1.png",
+      "tabDescription": "Project about Logistics",
+      "description": "Developed a responsive logistics website using React to streamline client operations and improve customer engagement. Focused on delivering a fast, user-friendly interface with optimized performance for real-time updates.",
       "category": "Web Design",
-      "client": "Artboard Studio",
+      "client": "Logistics",
       "startDate": "August 20, 2023",
-      "endDate": "November 20, 2023",
-      "designer": "ThemeJunction",
-      "livePreviewLink": "http//:google.com",
+      "endDate": "September 20, 2023",
+      "designer": "Karthick.S",
+      "livePreviewLink": "https://comfy-gingersnap-1be14d.netlify.app/",
       "sliderImages": ["", "", "", ""],
       "projectDescriptionTitle": "Project Description",
       "projectDescription": [
-        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        "Developed a responsive logistics website using React to enhance customer experience and streamline transport operations."
       ],
       "categoeys": [
         {
           "title": "The story",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "description": "The client needed a digital solution to simplify booking, tracking, and communication in their logistics process. I transformed their requirements into an intuitive platform where users can easily access services and updates."
         },
         {
           "title": "OUR APPROACH",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "description": "I followed a modular React architecture, integrating reusable components, responsive design, and API-driven data handling. The focus was on performance, scalability, and ensuring the client’s logistics workflows were digitally optimized."
         }
       ]
     },
     {
       "id": "2",
-      "title": "New Age",
+      "title": "ERP",
+      "breadcrumbs": [
+        {
+          "title": "Home",
+          "link": "/"
+        },
+        {
+          "title": "ERP-HR",
+          "link": "/blog/2"
+        }
+      ],
       "image": "/images/portfolio_2.webp",
-      "tabDescription": "Project about small application",
-      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-      "category": "Web Design",
-      "Client": "Artboard Studio",
-      "start Date": "August 20, 2023",
-      "end Date": "November 20, 2023",
-      "designer": "ThemeJunction",
-      "livePreviewLink": "http//:google.com",
+      "tabDescription": "Project about ERP Admin",
+      "description": "Built a scalable ERP application to manage employee attendance, leaves, tasks, and celebrations, ensuring smooth HR operations.",
+      "category": "Web Application",
+      "Client": "Aplex",
+      "start Date": "September 20, 2023",
+      "end Date": "May 20, 2024",
+      "designer": "Team",
+      "livePreviewLink": "",
       "sliderImages": ["", "", "", ""],
       "projectDescriptionTitle": "Project Description",
       "projectDescription": [
-        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        "Developed a custom ERP application similar to Zoho, designed to manage employee lifecycle operations such as check-in/check-out, leave management, holidays, task assignment, and celebrations. The solution ensures efficient workforce management and boosts organizational productivity."
       ],
       "categoeys": [
         {
           "title": "The story",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "description": "The client wanted a centralized platform to replace scattered tools for employee tracking.Needed features like attendance monitoring, leave approval workflows, and holiday scheduling.Wanted an easy way to assign and track tasks while also fostering employee engagement through celebration modules., The goal was to create a scalable ERP solution that could be expanded with more modules in the future."
         },
         {
           "title": "OUR APPROACH",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "description": "Frontend: Built a responsive and modular UI with React for smooth user experience.Backend: Designed RESTful APIs with Express & Node.js for business logic and data flow.Database: Used MongoDB for flexible and scalable data storage.Storage: Integrated AWS S3 Bucket for secure document and file management. Architecture: Focused on clean code, reusable components, and optimized API performance.Scalability: Designed the system to easily extend with new ERP features."
         }
       ]
     },
     {
       "id": "3",
-      "title": "Sebastian",
+      "title": "Home-Appliances CRM",
+      "breadcrumbs": [
+        {
+          "title": "Home",
+          "link": "/"
+        },
+        {
+          "title": "Home-Appliances CRM",
+          "link": "/blog/3"
+        }
+      ],
       "image": "/images/portfolio_3.webp",
-      "tabDescription": "Project about small application",
-      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-      "category": "Web Design",
-      "Client": "Artboard Studio",
-      "start Date": "August 20, 2023",
-      "end Date": "November 20, 2023",
-      "designer": "ThemeJunction",
-      "livePreviewLink": "http//:google.com",
+      "tabDescription": "CRM platform for managing home appliance branches, customers, EMI, and deliveries.",
+      "description": "A role-based CRM system for the home appliances industry, built to manage multiple branches, track customers and EMI payments, and streamline delivery and installation processes.",
+      "category": "Web Application",
+      "Client": "Home Appliances Enterprise",
+      "start Date": "May 20, 2024",
+      "end Date": "December 20, 2024",
+      "designer": "Karthick S",
+      "livePreviewLink": "",
       "sliderImages": ["", "", "", ""],
       "projectDescriptionTitle": "Project Description",
       "projectDescription": [
-        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        "Developed a Home Appliances CRM system to manage multiple branches, track customers, and monitor EMI payments. The platform includes role-based access for Admin, Manager, and Delivery Boy to streamline operations and ensure accountability.",
+        "Admin can oversee all branches, managers handle their assigned branches, and delivery staff upload delivery and installation images of appliances such as fridges, TVs, and washing machines. Managers can track delivery staff in real-time for better coordination."
       ],
       "categoeys": [
         {
-          "title": "The story",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "title": "The Story",
+          "description": "The client needed a centralized platform to manage multiple branches and improve customer tracking. They wanted to streamline EMI monitoring and branch-level performance while assigning clear roles. Admin required visibility into all operations, Managers needed branch-specific control, and Delivery Boys needed an easy way to update deliveries with proof of installation. This ensured smoother workflows, better accountability, and improved customer satisfaction."
         },
         {
-          "title": "OUR APPROACH",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "title": "Our Approach",
+          "description": "We built a scalable web application using React for the frontend and Node.js with Express for the backend. MongoDB was used for storing customer, branch, and EMI data, while AWS S3 Bucket handled secure image storage for appliance deliveries. A role-based access system ensured Admins, Managers, and Delivery Boys had tailored access to the system. The solution focused on responsiveness, scalability, and secure data handling to meet business needs."
         }
       ]
     },
     {
       "id": "4",
-      "title": "Mochnix",
-      "image": "/images/portfolio_4.webp",
-      "tabDescription": "Project about small application",
-      "description": "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-      "category": "Web Design",
-      "Client": "Artboard Studio",
-      "start Date": "August 20, 2023",
-      "end Date": "November 20, 2023",
-      "designer": "ThemeJunction",
-      "livePreviewLink": "http//:google.com",
+      "title": "ATMS",
+      "breadcrumbs": [
+        {
+          "title": "Home",
+          "link": "/"
+        },
+        {
+          "title": "ATMS",
+          "link": "/blog/4"
+        }
+      ],
+      "image": "/images/portfolio_5.png",
+      "tabDescription": "Smart toll management system with vehicle tracking and challan processing.",
+      "description": "A web-based ATMS application designed to track vehicles, manage toll operations, and streamline challan processing for traffic violations.",
+      "category": "Web Application",
+      "Client": "Toll Management Authority",
+      "start Date": "December 01, 2023",
+      "end Date": "March 15, 2024",
+      "designer": "Karthick S",
+      "livePreviewLink": "http://google.com",
       "sliderImages": ["", "", "", ""],
       "projectDescriptionTitle": "Project Description",
       "projectDescription": [
-        "The goal is there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+        "Developed an Advance Traffic Management System (ATMS) to automate toll operations, track vehicles, and process challans for traffic violations.",
+        "The platform provides real-time dashboards for monitoring vehicle flow, role-based access for admins and toll staff, and secure storage of toll and challan records."
       ],
       "categoeys": [
         {
-          "title": "The story",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "title": "The Story",
+          "description": "The client needed a modern solution to replace manual toll processes and improve efficiency. They wanted to track vehicles, reduce human errors, and handle traffic violation challans digitally. A centralized platform was required to ensure transparency and provide real-time monitoring for toll operations."
         },
         {
-          "title": "OUR APPROACH",
-          "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+          "title": "Our Approach",
+          "description": "We designed a scalable web application with React for the frontend, providing intuitive dashboards and responsive interfaces. The backend was developed using Node.js and Express for transaction processing and challan management, while MongoDB handled toll data and vehicle records. Role-based access ensured security, and real-time vehicle tracking enhanced traffic management efficiency."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Scita Solutions Website",
+      "breadcrumbs": [
+        { "title": "Home", "link": "/" },
+        { "title": "Scita Solutions", "link": "/blog/5" }
+      ],
+      "image": "/images/portfolio_6.png",
+      "tabDescription": "Corporate website for Scita Solutions showcasing intelligent highway and automation systems.",
+      "description": "A dynamic website for Scita Solutions to present their advanced highway, toll, parking, and home automation systems with clarity and technical elegance.",
+      "category": "Web Design",
+      "livePreviewLink": "http://www.scita.in/",
+      "Client": "Scita Solutions",
+      "start Date": "January 01, 2025",
+      "end Date": "November 15, 2025",
+      "designer": "Team",
+      "sliderImages": ["", "", "", ""],
+      "projectDescriptionTitle": "Project Description",
+      "projectDescription": [
+        "Developed a corporate website for Scita Solutions, highlighting their indigenously developed Parking, Toll, Surveillance, and Home Automation systems.",
+        "Focused on clear presentation of their products and solutions, with intuitive navigation, modern visuals, and mobile-responsive design."
+      ],
+      "categoeys": [
+        {
+          "title": "The Story",
+          "description": "Scita Solutions sought a digital platform to reflect their innovation in intelligent mobility — including parking, toll, and surveillance systems. The website needed to clearly showcase their product range and technological capabilities with a strong visual identity and streamlined user experience."
+        },
+        {
+          "title": "Our Approach",
+          "description": "We crafted a scalable web design using React for dynamic UI components and Node.js/Express for backend flexibility. The content was structured to highlight key product categories and technical strengths. Visual storytelling elements and performance optimizations ensured the site is engaging, accessible, and future-ready."
         }
       ]
     }

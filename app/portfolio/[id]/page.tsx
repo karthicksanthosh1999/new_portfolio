@@ -108,7 +108,7 @@ function Page() {
                       {portfolio?.tags?.map((item, idx) => (
                         <h6
                           key={idx}
-                          className="px-5 py-2 bg-[#2A1454] hover:bg-[#7E4AE7] transition duration-300 ease-in rounded-full w-fit">
+                          className="px-5 py-2 text-white bg-[#2A1454] hover:bg-[#7E4AE7] transition duration-300 ease-in rounded-full w-fit">
                           {item}
                         </h6>
                       ))}
@@ -123,7 +123,7 @@ function Page() {
                 <RecentPosts
                   key={idx}
                   title={item?.title ?? "N/A"}
-                  link={item?.title ?? "N/A"}
+                  link={item?.id ?? "N/A"}
                   date={item?.date ?? "N/A"}
                   image={item?.image ?? "N/A"}
                 />

@@ -46,12 +46,12 @@ function Page() {
   return (
     <>
       <HeroSection
-        title="Deloitte"
-        breadcrums={breadCrums}
+        title={portfolio?.title ?? "N/A"}
+        breadcrums={portfolio?.breadcrumbs ?? []}
         image={service_heror}
       />
       <div className="bg-[#050709]">
-        <section className="container max-w-[1400px] mx-auto px-5">
+        <section className="container max-w-[1400px] mx-auto px-5 space-y-5">
           <img
             src={portfolio?.image}
             alt={portfolio?.title}
@@ -106,13 +106,21 @@ function Page() {
             </div>
           </div>
           {/* LIVE PREVIEW BUTTON */}
-          <div className="py-5">
-            <Link
-              href={portfolio?.livePreviewLink ?? ""}
-              className="cursor-pointer px-6 py-3 w-full rounded-full bg-gradient-to-r from-[#8F38DA] to-[#321963] hover:from-[#050709] hover:to-[#8F38DA] text-white text-lg font-semibold shadow-md hover:opacity-90 transition duration-300">
-              Live Preview
-            </Link>
-          </div>
+          {portfolio?.livePreviewLink && (
+            <div className="py-5">
+              <Link
+                target="_blank"
+                aria-disabled={portfolio?.livePreviewLink ? true : false}
+                href={portfolio?.livePreviewLink ?? ""}
+                className={`px-6 py-3 w-full rounded-full bg-gradient-to-r from-[#8F38DA] to-[#321963] hover:from-[#050709] hover:to-[#8F38DA] text-white text-lg font-semibold shadow-md hover:opacity-90 transition duration-300 ${
+                  portfolio?.livePreviewLink
+                    ? "cursor-pointer"
+                    : "cursor-not-allowed"
+                }`}>
+                Live Preview
+              </Link>
+            </div>
+          )}
           {/* PROJECT DESCRIPTION */}
           <div className="container mx-auto max-w-[1400px]">
             <div>

@@ -28,7 +28,7 @@ const RecentPosts: FC<TRecetPost> = ({ link, title, date, image }) => {
         <div>
           <p className="text-xl font-semibold text-white">{date}</p>
           <Link
-            href={"/"}
+            href={link}
             className="hover:text-[#7E4AE7] text-white transition duration-300 ease-in">
             {title}
           </Link>

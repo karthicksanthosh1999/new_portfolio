@@ -3,6 +3,11 @@ type TCategoryType = {
   description: string;
 };
 
+export type TBreadcrumbs = {
+  title: string;
+  link: string;
+};
+
 export type TPortfoliotype = {
   id: string;
   title: string;
@@ -19,4 +24,5 @@ export type TPortfoliotype = {
   projectDescriptionTitle: string;
   projectDescription: string[];
   categoeys: TCategoryType[];
+  breadcrumbs: TBreadcrumbs[];
 };

@@ -3,8 +3,8 @@ import AnimatedCounter from "./AnimatedCounter";
 const stats = [
   {
     label: "Year of Experience",
-    value: 3,
-    suffix: "%",
+    value: 2,
+    suffix: "+",
   },
   {
     label: "Project Completed",
@@ -13,11 +13,6 @@ const stats = [
   },
   {
     label: "Happy Companies",
-    value: 3,
-    suffix: "+",
-  },
-  {
-    label: "Years of Experience",
     value: 3,
     suffix: "+",
   },
