@@ -2,7 +2,7 @@
   {
     "id": "1",
     "icons": "./images/skill_1.png",
-    "title": "ReactJS",
+    "title": "Next JS",
     "category": "Frontend",
     "color": "#ccc",
     "percentage": "80"
@@ -10,7 +10,7 @@
   {
     "id": "2",
     "icons": "./images/skill_2.png",
-    "title": "Postgres-SQL",
+    "title": "Prisma",
     "category": "Backend",
     "color": "#fff",
     "percentage": "70"
@@ -18,16 +18,56 @@
   {
     "id": "3",
     "icons": "./images/skill_5.png",
-    "title": "TypeScript",
-    "category": "Fontend",
+    "title": "JavaScript",
+    "category": "Programming",
     "color": "#000",
     "percentage": "90"
   },
   {
     "id": "4",
     "icons": "./images/skill_4.png",
-    "title": "HTML",
-    "category": "Fontend",
+    "title": "React JS",
+    "category": "Frontend",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "5",
+    "icons": "./images/skill_4.png",
+    "title": "TypeScript",
+    "category": "Programming",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "6",
+    "icons": "./images/skill_4.png",
+    "title": "Node JS",
+    "category": "Backend",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "7",
+    "icons": "./images/skill_4.png",
+    "title": "PostgreSQL",
+    "category": "Backend",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "8",
+    "icons": "./images/skill_4.png",
+    "title": "MongoDB",
+    "category": "Backend",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "9",
+    "icons": "./images/skill_4.png",
+    "title": "ViteTest",
+    "category": "Testing Tool",
     "color": "#ccc",
     "percentage": "80"
   }

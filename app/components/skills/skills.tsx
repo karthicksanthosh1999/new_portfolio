@@ -1,6 +1,7 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 import skills from "@/public/data/skills.json";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillsLoading = false;
@@ -11,15 +12,25 @@ const Skills = () => {
       <div className="lg:px-0 px-5 w-full flex items-center justify-center flex-col space-y-5 py-20">
         <div className="flex items-center justify-center flex-col space-y-3">
           <div>
-            <h1 className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
+            <motion.h1
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeIn", duration: 0.5 }}
+              className="bg-gradient-to-r from-[#8750f7] py-2 to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
               My Skills
-            </h1>
+            </motion.h1>
           </div>
           <div>
-            <p className="text-white text-[17px] text-center w-full md:w-[700px]">
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ ease: "easeIn", duration: 0.5 }}
+              className="text-white text-[17px] text-center w-full md:w-[700px]">
               We put your ideas and thus your wishes in the form of a unique web
               project that inspires you and you customers.
-            </p>
+            </motion.p>
           </div>
         </div>
         <div className="flex flex-wrap gap-5 items-center justify-center">
@@ -28,8 +39,14 @@ const Skills = () => {
             skillsData.response.map((item) => ( */}
 
           {skills ? (
-            skills.map((item) => (
-              <div className="w-[180px] space-y-3 group" key={item.id}>
+            skills.map((item, idx) => (
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ ease: "easeIn", duration: 1 }}
+                className="w-[180px] space-y-3 group"
+                key={item.id}>
                 <div className="bg-[#140C1C] group-hover:bg-[#2A1454] h-auto p-5 flex flex-col items-center justify-center gap-5 rounded-2xl border-2 border-[#140C1C] group-hover:border-[#8750f7] group-hover:border-2 transition duration-150 ease-in">
                   <div>
                     <img
@@ -45,7 +62,7 @@ const Skills = () => {
                 <p className="text-xl font-normal text-center text-[#8750f7]">
                   {item.title}
                 </p>
-              </div>
+              </motion.div>
             ))
           ) : skillsLoading ? (
             <Skeleton />
@@ -64,7 +81,7 @@ const Skills = () => {
                 </h3>
               </div>
               <p className="text-xl font-normal text-center text-[#8750f7]">
-                Add Skils
+                Add Skills
               </p>
             </div>
           )}

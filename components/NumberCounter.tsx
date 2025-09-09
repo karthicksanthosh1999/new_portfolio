@@ -16,6 +16,11 @@ const stats = [
     value: 3,
     suffix: "+",
   },
+  {
+    label: "Success Rate",
+    value: 100,
+    suffix: "%",
+  },
 ];
 
 export default function StatsSection() {
@@ -26,7 +31,7 @@ export default function StatsSection() {
           <div className="text-5xl font-semibold text-white space-y-5">
             <AnimatedCounter targetNumber={stat.value} />
             {stat.suffix}
-            <h5 className="text-[#808080] text-lg w-xs">{stat.label}</h5>
+            <h5 className="text-[#808080] text-xl w-xs">{stat.label}</h5>
           </div>
         </div>
       ))}

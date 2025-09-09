@@ -29,5 +29,5 @@ export default function AnimatedCounter({
     return () => clearInterval(timer);
   }, [targetNumber, duration]);
 
-  return <span>{count}</span>;
+  return <span className="text-5xl">{count}</span>;
 }

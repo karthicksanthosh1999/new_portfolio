@@ -3,6 +3,7 @@
 import React from "react";
 import blogs from "@/public/data/blogs.json";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const { push } = useRouter();
@@ -11,9 +12,13 @@ const Portfolio = () => {
     <>
       <div className="flex items-center justify-center flex-col space-y-3">
         <div>
-          <h1 className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
+          <motion.h1
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
             Recent Products
-          </h1>
+          </motion.h1>
         </div>
         <div>
           <p className="text-white text-[17px] text-center w-full md:w-[700px]">
@@ -34,7 +39,7 @@ const Portfolio = () => {
               {/* Image */}
               <img
                 src={item.image}
-                alt="recentwork"
+                alt="recentWork"
                 className="w-full object-cover transition-transform duration-300 ease-in hover:scale-110 h-[350px]"
               />
 

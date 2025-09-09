@@ -1,16 +1,17 @@
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import portfoliosData from "@/public/data/portfolio.json";
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 
 const PortfolioSection = () => {
+  const { push } = useRouter();
   const [isHovered, setIsHovered] = useState(false);
 
-  const { push } = useRouter();
-
-  const handleRotate = (id: string, isOpen: boolean) => {
-    setIsHovered(isOpen);
+  const handleRotate = (id: string) => {
+    portfoliosData?.portfolios.map((item) =>
+      item?.id === id ? setIsHovered(true) : setIsHovered(false)
+    );
   };
 
   return (
@@ -33,10 +34,14 @@ const PortfolioSection = () => {
           portfoliosData?.portfolios.map((item, idx) => (
             <motion.div
               key={idx}
-              onMouseEnter={() => handleRotate(item?.id, true)}
-              onMouseLeave={() => handleRotate(item?.id, false)}
               className="group bg-[#140C1C] lg:w-xl w-full flex items-end pt-10 lg:px-10 md:px-6 px-3 justify-center relative max-w-full">
-              <img src={item.image} alt="image" className="w-full" />
+              <img
+                onMouseEnter={() => handleRotate(item?.id)}
+                onMouseLeave={() => handleRotate(item?.id)}
+                src={item.image}
+                alt="image"
+                className="w-full"
+              />
               <motion.div
                 onClick={() => push(`/blog/${item?.id}`)}
                 initial={{ opacity: 0, y: 20 }}
