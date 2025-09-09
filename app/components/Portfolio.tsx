@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import blogs from "@/public/data/blogs.json";
 import { useRouter } from "next/navigation";
@@ -16,6 +14,7 @@ const Portfolio = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
             Recent Products
           </motion.h1>

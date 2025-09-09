@@ -18,21 +18,35 @@ const PortfolioSection = () => {
     <>
       <div className="flex items-center justify-center flex-col space-y-3">
         <div>
-          <h1 className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-2">
+          <motion.h1
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-2">
             My Projects
-          </h1>
+          </motion.h1>
         </div>
         <div>
-          <p className="text-white text-[17px] text-center w-full md:w-[700px] px-5">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="text-white text-[17px] text-center w-full md:w-[700px] px-5">
             Building modern web applications with React and Next.js for seamless
             user experiences.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-2">
         {portfoliosData?.portfolios &&
           portfoliosData?.portfolios.map((item, idx) => (
             <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, ease: "easeIn" }}
               key={idx}
               className="group bg-[#140C1C] lg:w-xl w-full flex items-end pt-10 lg:px-10 md:px-6 px-3 justify-center relative max-w-full">
               <img
