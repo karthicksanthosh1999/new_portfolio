@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "icons": "./images/skill_5.png",
+    "icons": "./images/skill_3.png",
     "title": "JavaScript",
     "category": "Programming",
     "color": "#000",
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "icons": "./images/skill_4.png",
+    "icons": "./images/skill_5.png",
     "title": "TypeScript",
     "category": "Programming",
     "color": "#ccc",
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "icons": "./images/skill_4.png",
+    "icons": "./images/skill_6.png",
     "title": "Node JS",
     "category": "Backend",
     "color": "#ccc",
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "icons": "./images/skill_4.png",
+    "icons": "./images/skill_7.png",
     "title": "PostgreSQL",
     "category": "Backend",
     "color": "#ccc",
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "icons": "./images/skill_4.png",
+    "icons": "./images/skill_8.png",
     "title": "MongoDB",
     "category": "Backend",
     "color": "#ccc",
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "icons": "./images/skill_4.png",
+    "icons": "./images/skill_9.png",
     "title": "ViteTest",
     "category": "Testing Tool",
     "color": "#ccc",

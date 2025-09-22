@@ -1,33 +1,44 @@
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export const pageList = [
   {
     title: "Home",
-    link: "/",
+    link: "/#home",
   },
   {
     title: "About",
-    link: "/about",
+    link: "/#about",
   },
   {
-    title: "Resume",
-    link: "/resume",
+    title: "Skills",
+    link: "/#skill",
   },
   {
-    title: "Testimonials",
-    link: "/testimonials",
+    title: "Blog",
+    link: "/#blog",
   },
   {
     title: "Contact",
-    link: "/contact",
+    link: "/#contact",
   },
 ];
 
 function Footer() {
+  const { push } = useRouter();
   return (
-    <section className="bg-[#0F0715] h-[335px] w-full flex flex-col items-center justify-center">
-      <img src="" alt="" />
+    <section className="bg-[#0F0715] h-[335px] w-full flex flex-col items-center justify-center gap-5">
+      <Image
+        src="/logo.png"
+        alt="logo"
+        height={100}
+        width={100}
+        className="cursor-pointer"
+        onClick={() => push("/")}
+      />
       <div className="flex flex-col gap-5 items-center justify-center">
         <div className="flex items-center flex-wrap justify-center gap-5">
           {pageList &&

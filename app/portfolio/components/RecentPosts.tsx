@@ -2,20 +2,26 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
+import { motion } from "framer-motion";
 
-type TRecetPost = {
+type TRecentPost = {
   title: string;
   link: string;
   date: string;
   image: string;
 };
 
-const RecentPosts: FC<TRecetPost> = ({ link, title, date, image }) => {
+const RecentPosts: FC<TRecentPost> = ({ link, title, date, image }) => {
   return (
-    <div className="bg-[#140C1C] rounded-lg p-5 space-y-5">
-      <h1 className="text-2xl font-semibold text-white uppercase">
+    <div className="bg-[#140C1C] rounded-lg p-5 space-y-5 overflow-hidden">
+      <motion.h1
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
+        className="text-2xl font-semibold text-white uppercase">
         Recent Post
-      </h1>
+      </motion.h1>
       <Separator />
       <div className="flex gap-3">
         <Image

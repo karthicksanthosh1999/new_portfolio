@@ -8,27 +8,37 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center flex-col space-y-3">
+      <div className="flex items-center justify-center flex-col space-y-3 overflow-hidden">
         <div>
           <motion.h1
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
+            className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-1">
             Recent Products
           </motion.h1>
         </div>
         <div>
-          <p className="text-white text-[17px] text-center w-full md:w-[700px]">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="text-white text-[17px] text-center w-full md:w-[700px]">
             We put your ideas and thus your wishes in the form of a unique web
             project that inspires you and you customers.
-          </p>
+          </motion.p>
         </div>
       </div>
-      <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-items-center justify-center">
+      <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-items-center justify-center overflow-hidden">
         {blogs.map((item) => (
-          <div className="group cursor-pointer w-full max-w-sm sm:max-w-md mx-auto">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="group cursor-pointer w-full max-w-sm sm:max-w-md mx-auto">
             <div className="relative overflow-hidden rounded-2xl shadow-md">
               {/* Category Label */}
               <p className="absolute bg-[#2F175C] bg-gradient-to-r from-[#8750f7] text-white text-sm sm:text-base p-2 rounded-full top-2 left-2 z-10">
@@ -55,7 +65,7 @@ const Portfolio = () => {
                 </h3>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </>

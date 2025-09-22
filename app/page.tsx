@@ -11,12 +11,12 @@ import PortfolioSection from "./components/PortfolioSection";
 export default function Home() {
   return (
     <div className="bg-[#0F0715] h-auto pt-10">
-      <div className="">
+      <div className="" id="home">
         {/* HEADING SECTION */}
         <HeroSection />
       </div>
       {/* MY EXPERIENCE & EDUCATIONS SECTION */}
-      <div className="w-full py-20">
+      <div className="w-full py-20" id="about">
         <Experience />
       </div>
       {/* PORTFOLIO & SERVICE SECTION */}
@@ -33,11 +33,13 @@ export default function Home() {
       {/* SKILLS SECTION */}
       <Skills />
       {/* RECENT WORK SECTION */}
-      <div className=" w-full flex items-center justify-center flex-col space-y-5 md:p-20 p-2 bg-[#0F0715]">
+      <div
+        className=" w-full flex items-center justify-center flex-col space-y-5 md:p-20 p-2 bg-[#0F0715]"
+        id="blog">
         <Portfolio />
       </div>
       {/* CONTACT FORM */}
-      <div className="bg-black md:py-20 py-10">
+      <div className="bg-black md:py-20 py-10" id="contact">
         <div className="w-full container mx-auto max-w-[1400px]">
           <Contact />
         </div>

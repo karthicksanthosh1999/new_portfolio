@@ -16,7 +16,7 @@ const PortfolioSection = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center flex-col space-y-3">
+      <div className="flex items-center justify-center flex-col space-y-3 overflow-hidden">
         <div>
           <motion.h1
             initial={{ opacity: 0, x: 50 }}
@@ -39,7 +39,7 @@ const PortfolioSection = () => {
           </motion.p>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-2">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-2 overflow-hidden">
         {portfoliosData?.portfolios &&
           portfoliosData?.portfolios.map((item, idx) => (
             <motion.div

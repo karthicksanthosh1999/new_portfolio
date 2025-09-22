@@ -29,7 +29,7 @@ function Tab({ tabs }: TTabProps) {
               <Link
                 href={item.link}
                 key={idx}
-                className={`m-2 p-3 rounded-lg hover:cursor-pointer w-full flex justify-between ${
+                className={`m-2 p-3 rounded-lg hover:cursor-pointer text-white w-full flex justify-between ${
                   paramsId.id === item.id ? "bg-[#8750F7]" : "bg-transparent"
                 }`}>
                 <div className="flex items-center gap-5">

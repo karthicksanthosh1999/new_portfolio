@@ -9,7 +9,9 @@ const Skills = () => {
   return (
     <>
       {/* SKILLS SECTION */}
-      <div className="lg:px-0 px-5 w-full flex items-center justify-center flex-col space-y-5 py-20">
+      <div
+        className="lg:px-0 px-5 w-full flex items-center justify-center flex-col space-y-5 py-20 overflow-hidden"
+        id="skill">
         <div className="flex items-center justify-center flex-col space-y-3">
           <div>
             <motion.h1
