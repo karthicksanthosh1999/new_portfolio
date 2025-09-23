@@ -4,8 +4,8 @@ import Link from "next/link";
 import {
   FaDownload,
   FaFacebook,
+  FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
 import {
@@ -19,13 +19,13 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   const mediaSection = [
     {
-      title: "twitter",
+      title: "Github",
       link: "",
-      icon: <FaTwitter size={20} className="" />,
+      icon: <FaGithub size={20} className="" />,
     },
     {
       link: "Facebook",
-      title: "fb",
+      title: "",
       icon: <FaFacebook size={20} className="" />,
     },
     {

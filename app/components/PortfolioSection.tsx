@@ -49,19 +49,13 @@ const PortfolioSection = () => {
               transition={{ duration: 0.5, ease: "easeIn" }}
               key={idx}
               className="group bg-[#140C1C] lg:w-xl w-full flex items-end pt-10 lg:px-10 md:px-6 px-3 justify-center relative max-w-full">
-              <img
-                onMouseEnter={() => handleRotate(item?.id)}
-                onMouseLeave={() => handleRotate(item?.id)}
-                src={item.image}
-                alt="image"
-                className="w-full"
-              />
+              <img src={item.image} alt="image" className="w-full" />
               <motion.div
                 onClick={() => push(`/blog/${item?.id}`)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
-                  opacity: isHovered ? 1 : 0,
-                  y: isHovered ? 0 : 20,
+                  opacity: 1,
+                  y: 20,
                 }}
                 transition={{ ease: "easeOut", duration: 0.4 }}
                 className="absolute flex p-5 rounded-2xl items-center bg-gradient-to-r from-blue-500 via-[#8750f7] via-10% to-blue-950 md:bottom-15  md:left-15  md:right-15 bottom-5 left-5 right-5 justify-between cursor-pointer">

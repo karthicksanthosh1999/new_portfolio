@@ -20,7 +20,7 @@ const Experience = () => {
                       {item.years}
                     </p>
                   </div>
-                  <h3 className="uppercase xl:text-4xl tracking-wider sm:text-2xl text-xl font-bold text-white">
+                  <h3 className="uppercase tracking-wider sm:text-2xl text-xl font-bold text-white">
                     {item.title}
                   </h3>
                   <p className="font-normal text-white">{item?.location}</p>
@@ -44,7 +44,7 @@ const Experience = () => {
                       {item.years}
                     </p>
                   </div>
-                  <h3 className="uppercase xl:text-4xl tracking-wider sm:text-2xl text-xl font-bold text-white">
+                  <h3 className="uppercase tracking-wider sm:text-2xl text-xl font-bold text-white">
                     {item.title}
                   </h3>
                   <p className="font-normal text-white">{item?.location}</p>
