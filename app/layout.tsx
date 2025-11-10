@@ -6,7 +6,6 @@ import ScrollBar from "@/components/ScrollBar";
 import Footer from "./components/Footer";
 import GlobalLoader from "@/components/GlobalLoader";
 import MotionCursor from "@/components/MotionCursor";
-import ChatBox from "./components/ChatBox";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
