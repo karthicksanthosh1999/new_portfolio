@@ -16,7 +16,7 @@ const ServiceSection = () => {
   return (
     <div className="flex items-center justify-center flex-col space-y-3">
       <h1 className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-2">
-        My Recent Work
+        My Personal Work
       </h1>
 
       <p className="text-white text-[17px] text-center w-full md:w-[700px] p-5">
@@ -34,24 +34,26 @@ const ServiceSection = () => {
             ServicePageData?.map((item, idx) => (
               <motion.div
                 key={idx}
-                transition={{
-                  type: "spring",
-                  bounce: 0.2,
-                  duration: 0.6,
-                }}
+                // transition={{
+                //   type: "spring",
+                //   bounce: 0.2,
+                //   duration: 0.6,
+                // }}
                 onMouseEnter={() => handleHover(idx)}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, ease: "easeOut", delay: idx * 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
                 onClick={() => push(`/service/${item.id}`)}
                 className={`flex lg:flex-row flex-col lg:gap-20 sm:gap-5 gap-2 justify-between lg:items-center items-start border-b-2 sm:p-5 p-2 pt-10 bg-gradient-to-r transition duration-200 ease-in-out border-[#8750f7]/30 max-w-full mx-3 px-3
-                        ${
-                          activeSection === idx &&
-                          "from-blue-500 via-[#8750f7] via-10% to-blue-950"
-                        }`}>
+                        ${activeSection === idx &&
+                  "from-blue-500 via-[#8750f7] via-10% to-blue-950"
+                  }`}>
                 <div className="flex lg:gap-10 gap-5">
                   <div>
                     <h4
-                      className={`${
-                        activeSection === idx ? "text-white" : "text-[#8750f7]"
-                      } text-2xl font-bold transition duration-200 ease-in-out`}>
+                      className={`${activeSection === idx ? "text-white" : "text-[#8750f7]"
+                        } text-2xl font-bold transition duration-200 ease-in-out`}>
                       0{idx + 1}
                     </h4>
                   </div>
@@ -68,10 +70,9 @@ const ServiceSection = () => {
                   <div className="sm:block hidden">
                     <BsArrowRight
                       size={35}
-                      className={`rotate-[30deg] ${
-                        activeSection === idx &&
+                      className={`rotate-[30deg] ${activeSection === idx &&
                         "rotate-[360deg] text-[#8750f7] transition duration-300 ease-in-out"
-                      }`}
+                        }`}
                     />
                   </div>
                 </div>

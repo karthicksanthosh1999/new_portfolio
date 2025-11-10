@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "./components/Header";
 import ScrollBar from "@/components/ScrollBar";
 import Footer from "./components/Footer";
+import GlobalLoader from "@/components/GlobalLoader";
+import MotionCursor from "@/components/MotionCursor";
+import ChatBox from "./components/ChatBox";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <GlobalLoader />
+        <MotionCursor />
         <Header />
         {children}
         <ScrollBar />

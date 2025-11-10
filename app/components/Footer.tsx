@@ -54,7 +54,7 @@ function Footer() {
         <p className="text-lg font-medium text-gray-600">
           © 2024 All rights reserved by{" "}
           <span className="text-white hover:text-[#7C49E3] cursor-pointer transition duration-300 ease-in">
-            JK-Ind
+            JK-TECH
           </span>
         </p>
       </div>

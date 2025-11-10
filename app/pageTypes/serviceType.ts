@@ -14,4 +14,5 @@ export type TServiceType = {
   img: string;
   details: string[];
   servicesDetails: TServicesDetails[];
+  projectLink?: string
 };

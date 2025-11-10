@@ -16,7 +16,7 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-1">
-            Recent Products
+            Recent Blogs
           </motion.h1>
         </div>
         <div>
@@ -26,8 +26,7 @@ const Portfolio = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             className="text-white text-[17px] text-center w-full md:w-[700px]">
-            We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you and you customers.
+            This is my recent Blogs
           </motion.p>
         </div>
       </div>

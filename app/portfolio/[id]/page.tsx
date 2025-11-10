@@ -8,6 +8,7 @@ import blogs from "@/public/data/blogs.json";
 import RecentPosts from "../components/RecentPosts";
 import { Separator } from "@/components/ui/separator";
 import { IoMdCheckmarkCircle } from "react-icons/io";
+import { formatMarkdownText } from "@/lib/textHilighter";
 
 function Page() {
   const [portfolio, setPortfolio] = useState<TBlogtype | null>(null);
@@ -63,8 +64,11 @@ function Page() {
               {/* PROJECT DESCRIPTION */}
               <div className="container mx-auto">
                 {portfolio?.description.map((item, idx) => (
-                  <p className="text-white text-lg font-normal py-2" key={idx}>
-                    {item}
+                  <p className="text-white text-lg font-normal py-2" key={idx}
+                    dangerouslySetInnerHTML={{
+                      __html: formatMarkdownText(item)
+                    }}
+                  >
                   </p>
                 ))}
                 {/* PROJECT STORY & APPROACH */}
@@ -79,8 +83,11 @@ function Page() {
                         />
                         <p
                           className="text-lg font-normal text-white py-1"
-                          key={idx}>
-                          {item}
+                          key={idx}
+                          dangerouslySetInnerHTML={{
+                            __html: formatMarkdownText(item)
+                          }}
+                        >
                         </p>
                       </div>
                     ))}
@@ -93,8 +100,9 @@ function Page() {
                     {portfolio?.conclusion.map((item, idx) => (
                       <p
                         className="text-lg font-normal text-white py-1"
-                        key={idx}>
-                        {item}
+                        key={idx} dangerouslySetInnerHTML={{
+                          __html: formatMarkdownText(item)
+                        }}>
                       </p>
                     ))}
                   </div>
@@ -108,8 +116,10 @@ function Page() {
                       {portfolio?.tags?.map((item, idx) => (
                         <h6
                           key={idx}
-                          className="px-5 py-2 text-white bg-[#2A1454] hover:bg-[#7E4AE7] transition duration-300 ease-in rounded-full w-fit">
-                          {item}
+                          className="px-5 py-2 text-white bg-[#2A1454] hover:bg-[#7E4AE7] transition duration-300 ease-in rounded-full w-fit"
+                          dangerouslySetInnerHTML={{
+                            __html: formatMarkdownText(item)
+                          }}>
                         </h6>
                       ))}
                     </div>

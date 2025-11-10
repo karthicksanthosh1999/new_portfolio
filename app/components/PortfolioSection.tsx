@@ -24,7 +24,7 @@ const PortfolioSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             className="bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center py-2">
-            My Projects
+            My Office Projects
           </motion.h1>
         </div>
         <div>
