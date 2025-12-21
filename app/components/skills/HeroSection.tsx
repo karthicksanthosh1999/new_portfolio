@@ -1,5 +1,4 @@
 import StatsSection from "@/components/NumberCounter";
-import Image from "next/image";
 import Link from "next/link";
 import {
   FaDownload,
@@ -15,22 +14,29 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 export default function HeroSection() {
+
+  const ThreeScene = dynamic(
+  () => import('@/components/ThreeScene'),
+  { ssr: false }
+)
+
   const mediaSection = [
     {
       title: "Github",
-      link: "",
+      link: "https://github.com/karthicksanthosh1999",
       icon: <FaGithub size={20} className="" />,
     },
     {
       link: "Facebook",
-      title: "",
+      title: "https://www.facebook.com/joshap.karthick",
       icon: <FaFacebook size={20} className="" />,
     },
     {
       title: "LinkedIn",
-      link: "",
+      link: "https://www.linkedin.com/in/karthick-s-278678241",
       icon: <FaLinkedin size={20} className="" />,
     },
     {
@@ -41,7 +47,7 @@ export default function HeroSection() {
   ];
   return (
     <>
-      <section className="bg-[#321D5A] bg-[radial-gradient(circle,_rgba(50,_29,_90,_1)_0%,_rgba(0,_0,_0,_1)_74%)] overflow-hidden">
+      <section className="bg-[#321D5A] bg-[radial-gradient(circle,_rgba(50,_29,_90,_1)_0%,_rgba(0,_0,_0,_1)_74%)] overflow-hidden relative">
         <div className="container mx-auto max-w-[1400px] px-5 py-10 flex md:flex-row flex-col lg:h-screen h-auto gap-10">
           {/* HEADING SECTION */}
           <div className="md:w-1/2 w-full space-y-5 flex items-start justify-center flex-col">
@@ -87,6 +93,7 @@ export default function HeroSection() {
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <Link
+                            target="_parent"
                             href={item?.link}
                             className="border border-blue-600 p-3 rounded-full hover:bg-blue-600 text-blue-600 hover:text-white transition duration-300 ease-in">
                             {item.icon}
@@ -102,21 +109,8 @@ export default function HeroSection() {
             </div>
           </div>
           {/* IMAGE SECTION */}
-          <div className="md:w-1/2 w-full flex items-center justify-center">
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ ease: "easeIn", duration: 0.5 }}
-              className="border border-blue-600 h-[400px] flex items-center justify-center lg:w-sm w-xs max-w-full rounded-lg transition duration-300 ease-in sm:rotate-[10deg] hover:rotate-0 rotate-0 overflow-hidden">
-              <Image
-                src="/logo.png"
-                alt="logo"
-                width={400}
-                height={400}
-                className="max-h-full max-w-full object-contain"
-              />
-            </motion.div>
+         <div className="w-full relative h-[60vh] md:h-[80vh] overflow-visible absolute">
+            <ThreeScene />
           </div>
         </div>
         <StatsSection />

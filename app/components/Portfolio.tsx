@@ -31,8 +31,9 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-items-center justify-center overflow-hidden">
-        {blogs.map((item) => (
+        {blogs.map((item, idx) => (
           <motion.div
+            key={idx}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
