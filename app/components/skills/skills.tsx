@@ -2,10 +2,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 import skills from "@/public/data/skills.json";
 import { motion } from "framer-motion";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Skills = () => {
-  const skillsLoading = false;
-
   return (
     <>
       {/* SKILLS SECTION */}
@@ -35,12 +34,20 @@ const Skills = () => {
             </motion.p>
           </div>
         </div>
+
+        <div className=" h-[60vh] md:h-[40vh] w-fit">
+          <DotLottieReact
+            src="/Aibrain.json"
+            loop
+            autoplay
+          />
+        </div>
         <div className="flex flex-wrap gap-5 items-center justify-center">
           {/* TOOLS SECTION */}
           {/* {skillsData && Array.isArray(skillsData?.response) ? (
             skillsData.response.map((item) => ( */}
 
-          {skills ? (
+          {skills &&
             skills.map((item, idx) => (
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
@@ -48,8 +55,8 @@ const Skills = () => {
                 viewport={{ once: true }}
                 transition={{ ease: "easeIn", duration: 1 }}
                 className="w-[180px] space-y-3 group"
-                key={item.id}>
-                <div className="bg-[#140C1C] group-hover:bg-[#2A1454] h-auto p-5 flex flex-col items-center justify-center gap-5 rounded-2xl border-2 border-[#140C1C] group-hover:border-[#8750f7] group-hover:border-2 transition duration-150 ease-in">
+                key={item.id} >
+                <div className="animated-border bgColor h-auto p-5 flex flex-col items-center justify-center gap-5 rounded-2xl">
                   <div>
                     <img
                       src={item.icons}
@@ -65,28 +72,9 @@ const Skills = () => {
                   {item.title}
                 </p>
               </motion.div>
-            ))
-          ) : skillsLoading ? (
-            <Skeleton />
-          ) : (
-            <div className="w-fit space-y-3 group">
-              <div className="bg-[#140C1C] group-hover:bg-[#2A1454] h-auto p-5 flex flex-col items-center justify-center gap-5 rounded-2xl border-2 border-[#140C1C] group-hover:border-[#8750f7] transition duration-150 ease-in">
-                <div>
-                  <img
-                    src="/react.png"
-                    alt="react"
-                    className="h-20 w-20 grayscale-100 group-hover:grayscale-0 transition duration-200 ease-in group-hover:scale-105 group-hover:animate-pulse"
-                  />
-                </div>
-                <h3 className="font-extrabold text-[18px] text-center text-gray-500 group-hover:text-[#8750f7] transition duration-150 ease-in">
-                  0%
-                </h3>
-              </div>
-              <p className="text-xl font-normal text-center text-[#8750f7]">
-                Add Skills
-              </p>
-            </div>
-          )}
+            )
+            )
+          }
         </div>
       </div>
     </>

@@ -31,8 +31,9 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-items-center justify-center overflow-hidden">
-        {blogs.map((item) => (
+        {blogs.map((item, idx) => (
           <motion.div
+            key={idx}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -40,7 +41,7 @@ const Portfolio = () => {
             className="group cursor-pointer w-full max-w-sm sm:max-w-md mx-auto">
             <div className="relative overflow-hidden rounded-2xl shadow-md">
               {/* Category Label */}
-              <p className="absolute bg-[#2F175C] bg-gradient-to-r from-[#8750f7] text-white text-sm sm:text-base p-2 rounded-full top-2 left-2 z-10">
+              <p className="absolute bg-[#2F175C] bg-gradient-to-r from-[#8750f7] text-white h-10 w-10 text-sm sm:text-base p-2 rounded-full top-2 left-2 z-10 flex items-center justify-center">
                 {"AI"}
               </p>
 

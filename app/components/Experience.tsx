@@ -13,7 +13,7 @@ const Experience = () => {
           {/* Content Area */}
           <div className="max-w-xl space-y-5">
             {experiienceAndEducation?.experiences.map((item, idx) => (
-              <div className="group" key={idx}>
+              <div className="group animated-border" key={idx}>
                 <div className="bg-[#140C1C] group-hover:bg-gradient-to-r group-hover:from-[#8750f7] p-4 sm:p-5 rounded-2xl transition duration-300 ease-in w-full">
                   <div className="flex flex-wrap justify-between text-sm sm:text-base text-white mb-2 gap-2">
                     <p className="text-2xl font-bold text-[#8750f7] group-hover:text-white transition duration-200 ease-in-out">
@@ -37,7 +37,7 @@ const Experience = () => {
           {/* Content Area */}
           <div className="max-w-xl space-y-5">
             {experiienceAndEducation?.education.map((item, idx) => (
-              <div className="group" key={idx}>
+              <div className="group animated-border" key={idx}>
                 <div className="bg-[#140C1C] group-hover:bg-gradient-to-r group-hover:from-[#8750f7] p-4 sm:p-5 rounded-2xl transition duration-300 ease-in w-full">
                   <div className="flex flex-wrap justify-between text-sm sm:text-base text-white mb-2 gap-2">
                     <p className="text-2xl font-bold text-[#8750f7] group-hover:text-white transition duration-200 ease-in-out">

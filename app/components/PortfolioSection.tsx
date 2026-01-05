@@ -3,6 +3,7 @@ import React, { useCallback, useState } from "react";
 import portfoliosData from "@/public/data/portfolio.json";
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const PortfolioSection = () => {
   const { push } = useRouter();
@@ -39,6 +40,15 @@ const PortfolioSection = () => {
           </motion.p>
         </div>
       </div>
+
+      <div className=" h-[60vh] md:h-[40vh]">
+        <DotLottieReact
+          src="/coding.json"
+          loop
+          autoplay
+        />
+      </div>
+
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 px-2 overflow-hidden">
         {portfoliosData?.portfolios &&
           portfoliosData?.portfolios.map((item, idx) => (
@@ -50,10 +60,11 @@ const PortfolioSection = () => {
               key={idx}
               className="group bg-[#140C1C] lg:w-xl w-full flex items-end pt-10 lg:px-10 md:px-6 px-3 justify-center relative max-w-full">
               <img src={item.image} alt="image" className="w-full" />
+              {/* BOTTOM CARD SECTION */}
               <motion.div
                 onClick={() => push(`/blog/${item?.id}`)}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{
+                whileHover={{
                   opacity: 1,
                   y: 20,
                 }}

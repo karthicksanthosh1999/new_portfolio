@@ -70,5 +70,13 @@
     "category": "Testing Tool",
     "color": "#ccc",
     "percentage": "80"
+  },
+  {
+    "id": "10",
+    "icons": "./images/skill_10.png",
+    "title": "AI",
+    "category": "AI",
+    "color": "#ccc",
+    "percentage": "20"
   }
 ]

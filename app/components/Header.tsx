@@ -35,22 +35,18 @@ function Header() {
         <div className="flex justify-between items-center px-6 py-4 md:mt-2">
           <Link
             href={"/"}
-            className={`cursor-pointer font-semibold text-lg flex ${
-              scrolled ? "text-white" : "text-white"
-            }`}>
+            className={`cursor-pointer font-semibold text-lg flex `}>
             <Image src="/logo.png" alt="logo" height={50} width={50} />
           </Link>
 
           {/* Desktop Menu */}
           <ul
-            className={`hidden md:flex gap-6 items-center ${
-              scrolled ? "text-white" : "text-white"
-            }`}>
+            className={`hidden md:flex gap-6 items-center}`}>
             {pageList.map((item, idx) => (
               <li key={idx}>
                 <Link
                   href={item.link}
-                  className="cursor-pointer text-lg font-semibold hover:underline transition">
+                  className={`${item.title === "Chat AI" ? "text-yellow-200" : "text-white"}  cursor-pointer text-lg font-semibold hover:underline transition`}>
                   {item.title}
                 </Link>
               </li>
@@ -59,9 +55,8 @@ function Header() {
 
           {/* Mobile Hamburger */}
           <button
-            className={`md:hidden p-2 rounded-lg ${
-              scrolled ? "hover:bg-gray-200/20 text-white" : "text-white"
-            }`}
+            className={`md:hidden p-2 rounded-lg ${scrolled ? "hover:bg-gray-200/20 text-white" : "text-white"
+              }`}
             onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

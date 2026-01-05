@@ -8,21 +8,6 @@ import portfolioData from "@/public/data/portfolio.json";
 import Link from "next/link";
 
 function Page() {
-  const breadCrums = [
-    {
-      title: "Home",
-      link: "/",
-    },
-    {
-      title: "Portfolios",
-      link: "/portfolio",
-    },
-    {
-      title: "Deloitte",
-      link: "/1",
-    },
-  ];
-
   const [portfolio, setPortfolio] = useState<TPortfoliotype | null>(null);
   const { id } = useParams();
 
@@ -112,11 +97,10 @@ function Page() {
                 target="_blank"
                 aria-disabled={portfolio?.livePreviewLink ? true : false}
                 href={portfolio?.livePreviewLink ?? ""}
-                className={`px-6 py-3 w-full rounded-full bg-gradient-to-r from-[#8F38DA] to-[#321963] hover:from-[#050709] hover:to-[#8F38DA] text-white text-lg font-semibold shadow-md hover:opacity-90 transition duration-300 ${
-                  portfolio?.livePreviewLink
+                className={`px-6 py-3 w-full rounded-full bg-gradient-to-r from-[#8F38DA] to-[#321963] hover:from-[#050709] hover:to-[#8F38DA] text-white text-lg font-semibold shadow-md hover:opacity-90 transition duration-300 ${portfolio?.livePreviewLink
                     ? "cursor-pointer"
                     : "cursor-not-allowed"
-                }`}>
+                  }`}>
                 Live Preview
               </Link>
             </div>

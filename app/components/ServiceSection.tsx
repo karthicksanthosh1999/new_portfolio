@@ -3,6 +3,7 @@ import ServicePageData from "@/public/data/service.json";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { BsArrowRight } from "react-icons/bs";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const ServiceSection = () => {
   const [activeSection, setActiveSection] = useState(0);
@@ -22,6 +23,14 @@ const ServiceSection = () => {
       <p className="text-white text-[17px] text-center w-full md:w-[700px] p-5">
         Here am mentioned my self studied work.
       </p>
+      <div className=" h-[60vh] md:h-[40vh]">
+        <DotLottieReact
+          src="/computer.json"
+          loop
+          autoplay
+        />
+      </div>
+
       <AnimatePresence mode="wait">
         <motion.div
           key="services"
@@ -29,7 +38,7 @@ const ServiceSection = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.4 }}
-          className="grid grid-rows-4 cursor-pointer">
+          className="grid grid-rows-4 cursor-pointer w-auto">
           {ServicePageData &&
             ServicePageData?.map((item, idx) => (
               <motion.div
@@ -45,8 +54,7 @@ const ServiceSection = () => {
                 transition={{ duration: 0.7, ease: "easeOut", delay: idx * 0.2 }}
                 viewport={{ once: true, amount: 0.2 }}
                 onClick={() => push(`/service/${item.id}`)}
-                className={`flex lg:flex-row flex-col lg:gap-20 sm:gap-5 gap-2 justify-between lg:items-center items-start border-b-2 sm:p-5 p-2 pt-10 bg-gradient-to-r transition duration-200 ease-in-out border-[#8750f7]/30 max-w-full mx-3 px-3
-                        ${activeSection === idx &&
+                className={`flex lg:flex-row flex-col lg:gap-20 sm:gap-5 gap-2 justify-between lg:items-center items-start border-b-2 sm:p-5 p-2 pt-10 bg-gradient-to-r transition duration-200 ease-in-out border-[#8750f7]/30 max-w-full mx-3 px-3 ${activeSection === idx &&
                   "from-blue-500 via-[#8750f7] via-10% to-blue-950"
                   }`}>
                 <div className="flex lg:gap-10 gap-5">

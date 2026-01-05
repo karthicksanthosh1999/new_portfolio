@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "title": "Expence Tracker",
-    "description": "Track our daily expences",
+    "title": "Expense Tracker",
+    "description": "AI powered expense tracker",
     "img": "/images/service_1.webp",
     "details": [
       "Our Expense Tracker helps you record and manage your daily spending with ease. Whether it’s groceries, bills, or personal purchases, you can log every detail in one place.",
@@ -55,6 +55,32 @@
     "id": "3",
     "title": "JK Chat Bot",
     "description": "HR easy to understand myself ask to AI",
+    "img": "/images/service_1.webp",
+    "details": [
+      "The JK Chat Bot is an AI-powered assistant designed to simplify HR-related queries and personal interactions. It helps users find answers quickly without the need for manual searches.",
+      "Employees can ask the bot about company policies, leave balances, or general HR questions, and get instant responses powered by AI intelligence.",
+      "This chatbot makes HR communication smooth, saves time, and ensures employees always feel supported with accurate information."
+    ],
+    "servicesDetails": [
+      {
+        "id": "0",
+        "title": "Services Process",
+        "description": "We build the JK Chat Bot with a structured process to deliver reliable and intelligent responses.",
+        "points": [
+          "Understand HR requirements and use cases",
+          "Train AI with company data and FAQs",
+          "Enable natural language understanding",
+          "Integrate chatbot into web and mobile platforms",
+          "Provide real-time, automated responses",
+          "Continuously improve with user feedback and updates"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Task Manager",
+    "description": "AI powered task manager",
     "img": "/images/service_1.webp",
     "details": [
       "The JK Chat Bot is an AI-powered assistant designed to simplify HR-related queries and personal interactions. It helps users find answers quickly without the need for manual searches.",

@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import ServiceSection from "./components/ServiceSection";
 import PortfolioSection from "./components/PortfolioSection";
+import { Suspense } from "react";
 
 export default function Home() {
   return (

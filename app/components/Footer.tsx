@@ -6,6 +6,10 @@ import { useRouter } from "next/navigation";
 
 export const pageList = [
   {
+    title: "Chat AI",
+    link: "/ai",
+  },
+  {
     title: "Home",
     link: "/#home",
   },
@@ -46,7 +50,7 @@ function Footer() {
               <Link
                 href={item.link}
                 key={idx}
-                className="hover:underline text-lg text-white font-semibold transition duration-300 ease-in">
+                className={`hover:underline text-lg ${item.title === "Chat AI" ? "text-yellow-200" : "text-white"} font-semibold transition duration-300 ease-in`}>
                 {item.title}
               </Link>
             ))}
