@@ -144,7 +144,7 @@ function Service() {
                 href={serviceData?.projectLink ?? ""}
                 className="text-base sm:text-lg font-normal text-blue-400 py-2 sm:py-3 underline break-all"
               >
-                {serviceData?.projectLink ?? "N/A"}
+                Link
               </Link>
             </div>
 

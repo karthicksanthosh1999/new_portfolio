@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import { TPortfoliotype } from "@/app/pageTypes/portfolioTypes";
 import portfolioData from "@/public/data/portfolio.json";
 import Link from "next/link";
+import ProjectSlider from "@/app/components/projectSlider";
 
 function Page() {
   const [portfolio, setPortfolio] = useState<TPortfoliotype | null>(null);
@@ -40,11 +41,11 @@ function Page() {
           <img
             src={portfolio?.image}
             alt={portfolio?.title}
-            className="w-full"
+            className="pt-5 md:pt-10 w-full"
           />
           <div className="w-full flex md:flex-row flex-col gap-5 items-center justify-between pt-10">
             <div className="md:w-1/2 w-full space-y-5">
-              <h1 className="text-5xl font-bold text-white">
+              <h1 className="text-3xl md:text-5xl font-bold text-white">
                 {portfolio?.title ?? "N/A"}
               </h1>
               <p className="text-white font-normal text-base">
@@ -98,8 +99,8 @@ function Page() {
                 aria-disabled={portfolio?.livePreviewLink ? true : false}
                 href={portfolio?.livePreviewLink ?? ""}
                 className={`px-6 py-3 w-full rounded-full bg-gradient-to-r from-[#8F38DA] to-[#321963] hover:from-[#050709] hover:to-[#8F38DA] text-white text-lg font-semibold shadow-md hover:opacity-90 transition duration-300 ${portfolio?.livePreviewLink
-                    ? "cursor-pointer"
-                    : "cursor-not-allowed"
+                  ? "cursor-pointer"
+                  : "cursor-not-allowed"
                   }`}>
                 Live Preview
               </Link>
@@ -108,7 +109,7 @@ function Page() {
           {/* PROJECT DESCRIPTION */}
           <div className="container mx-auto max-w-[1400px]">
             <div>
-              <h1 className="text-white text-5xl font-bold mb-5">
+              <h1 className="text-white text-3xl md:text-5xl font-bold mb-5">
                 {portfolio?.projectDescriptionTitle}
               </h1>
               {portfolio?.projectDescription.map((item, idx) => (
@@ -135,8 +136,22 @@ function Page() {
             {/* PAGINATION */}
             <div className="bg-[#8750F7] h-auto w-full"></div>
           </div>
-        </section>
-      </div>
+          {/* PROJECT SLIDER */}
+          <div className="container mx-auto max-w-[1400px]">
+            <div>
+              <h1 className="text-white text-3xl md:text-5xl font-bold mb-5">
+                {portfolio?.projectPreview}
+              </h1>
+            </div>
+            <div className="py-5">
+              {
+                portfolio?.sliderImages &&
+                <ProjectSlider images={portfolio?.sliderImages} />
+              }
+            </div>
+          </div>
+        </section >
+      </div >
     </>
   );
 }

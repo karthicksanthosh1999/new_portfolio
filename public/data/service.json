@@ -4,6 +4,7 @@
     "title": "Expense Tracker",
     "description": "AI powered expense tracker",
     "img": "/images/service_1.webp",
+    "projectLink":"https://expense-management-admin-vllp.vercel.app/",
     "details": [
       "Our Expense Tracker helps you record and manage your daily spending with ease. Whether it’s groceries, bills, or personal purchases, you can log every detail in one place.",
       "The system allows you to categorize expenses, monitor monthly budgets, and gain insights into your financial habits. This ensures smarter financial planning and better control over money.",

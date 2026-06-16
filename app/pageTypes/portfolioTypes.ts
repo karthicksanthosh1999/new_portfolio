@@ -22,6 +22,7 @@ export type TPortfoliotype = {
   livePreviewLink: string;
   sliderImages: string[];
   projectDescriptionTitle: string;
+  projectPreview?: string;
   projectDescription: string[];
   categoeys: TCategoryType[];
   breadcrumbs: TBreadcrumbs[];

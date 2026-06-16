@@ -1,10 +1,33 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import React from "react";
 import skills from "@/public/data/skills.json";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Skills = () => {
+
+  const containerVariants: Variants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2 // delay between items
+      }
+    }
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
+
   return (
     <>
       {/* SKILLS SECTION */}
@@ -47,20 +70,24 @@ const Skills = () => {
           {/* {skillsData && Array.isArray(skillsData?.response) ? (
             skillsData.response.map((item) => ( */}
 
-          {skills &&
-            skills.map((item, idx) => (
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex flex-wrap gap-6 items-center justify-center"
+          >
+            {skills.map((item) => (
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ ease: "easeIn", duration: 1 }}
+                key={item.id}
+                variants={itemVariants}
                 className="w-[180px] space-y-3 group"
-                key={item.id} >
+              >
                 <div className="animated-border bgColor h-auto p-5 flex flex-col items-center justify-center gap-5 rounded-2xl">
                   <div>
                     <img
                       src={item.icons}
-                      alt="react"
+                      alt={item.title}
                       className="h-20 w-20 grayscale-100 group-hover:grayscale-0 transition duration-200 ease-in group-hover:scale-105"
                     />
                   </div>
@@ -72,9 +99,9 @@ const Skills = () => {
                   {item.title}
                 </p>
               </motion.div>
-            )
-            )
-          }
+            ))}
+          </motion.div>
+
         </div>
       </div>
     </>
