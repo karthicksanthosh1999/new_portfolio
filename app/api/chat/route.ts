@@ -1,59 +1,66 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
-import { NextRequest, NextResponse } from 'next/server';
+import OpenAI from "openai";
+import { NextRequest, NextResponse } from "next/server";
+import profile from "@/public/data/portfolio.json";
 
-// 1. Initialize outside the handler (but check for key inside or via assertion)
-const apiKey = process.env.GEMINI_API_KEY;
-const genAi = new GoogleGenerativeAI(apiKey || "");
 
-export const POST = async (req: NextRequest) => {
-    try {
-        // 2. Validate API Key existence
-        if (!apiKey) {
-            return NextResponse.json({ error: "Gemini API Key not configured" }, { status: 500 });
-        }
+export async function POST(req: NextRequest) {
 
-        // 3. Extract and validate input
-        const { message } = await req.json();
-        if (!message) {
-            return NextResponse.json({ error: "Message is required" }, { status: 400 });
-        }
+const SYSTEM_PROMPT = `
+You are JK, Karthick's personal portfolio assistant.
 
-        // 4. Use systemInstruction for better persona sticking
-        const model = genAi.getGenerativeModel({
-            model: "gemini-2.0-flash",
-            systemInstruction: `
-                You are an AI assistant for a developer's portfolio. 
-                Answer like a professional HR assistant representing the candidate.
-                
-                Candidate details:
-                - Full Stack Developer (Next.js, React, Node.js, PostgreSQL)
-                - 2+ years experience
-                - Strong in TypeScript, Redux, React Query
-                - Built CRM, dashboards, AI apps
-                - Looking for product-based company roles
-                
-                Be concise, helpful, and professional.
-            `,
-        });
+Talk naturally like a human, not like an AI assistant.
 
-        // 5. Generate content
-        const result = await model.generateContent(message);
-        const responseText = result.response.text();
+You know everything about Karthick from the portfolio data provided below.
 
-        return NextResponse.json({ reply: responseText });
+Rules:
+- Never say "based on the provided data".
+- Never say "I don't have access to that information".
+- Never mention JSON, database, portfolio data, context, or training data.
+- Speak conversationally and confidently.
+- Refer to Karthick in first person ("I", "my") when answering questions about him.
+- Keep responses under 100 words.
+- Use a friendly and professional tone.
+- Avoid sounding robotic or corporate.
+- Respond as if Karthick himself is chatting with visitors.
+- If information is unavailable, say something natural like:
+  "I haven't added that information to my portfolio yet."
 
-    } catch (error: any) {
+Portfolio Data:
+${JSON.stringify(profile)}
+`;
 
-        if (error.status === 429) {
-            return NextResponse.json(
-                { error: "Rate limit reached. Please try again in 30 seconds." },
-                { status: 429 }
-            );
-        }
+    const client = new OpenAI({
+      baseURL: "https://openrouter.ai/api/v1",
+      apiKey: process.env.OPENROUTER_API_KEY,
+    });
+  try {
+    const { message } = await req.json();
 
-        return NextResponse.json(
-            { error: "Internal Server Error" },
-            { status: 500 }
-        );
-    }
+    const completion = await client.chat.completions.create({
+      model: "meta-llama/llama-3-8b-instruct",
+      max_tokens:500,
+      temperature:0.7,
+      messages: [
+        {
+          role: "system",
+          content: SYSTEM_PROMPT,
+        },
+        {
+          role: "user",
+          content: message,
+        },
+      ],
+    });
+
+    return NextResponse.json({
+      reply: completion.choices[0].message.content,
+    });
+  } catch (error) {
+    console.error(error);
+
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 }
+    );
+  }
 }

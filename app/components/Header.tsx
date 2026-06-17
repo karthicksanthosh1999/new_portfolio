@@ -46,7 +46,7 @@ function Header() {
               <li key={idx}>
                 <Link
                   href={item.link}
-                  className={`${item.title === "Chat AI" ? "text-yellow-200" : "text-white"}  cursor-pointer text-lg font-semibold hover:underline transition`}>
+                  className={`text-white cursor-pointer text-lg font-semibold hover:underline transition`}>
                   {item.title}
                 </Link>
               </li>

@@ -37,10 +37,11 @@ const page = () => {
         });
 
         const data = await res.json();
+        console.log(data?.reply)
 
         setMessages((preV) => [
             ...preV,
-            { role: 'ai', text: data?.replay }
+            { role: 'ai', text: data?.reply }
         ])
         setLoading(false)
     }

@@ -1,0 +1,28 @@
+{
+  "name": "Karthick",
+  "title": "Full Stack Developer",
+  "experience": "2+ Years",
+  "skills": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "PostgreSQL",
+    "Prisma",
+    "Redux",
+    "React Query"
+  ],
+  "projects": [
+    {
+      "name": "Expense Tracker",
+      "description": "AI-powered expense management application."
+    },
+    {
+      "name": "CRM System",
+      "description": "Customer relationship management platform."
+    }
+  ],
+  "email": "yourmail@gmail.com",
+  "github": "https://github.com/yourusername",
+  "linkedin": "https://linkedin.com/in/yourprofile"
+}

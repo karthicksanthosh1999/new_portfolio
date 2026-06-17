@@ -6,6 +6,7 @@ import ScrollBar from "@/components/ScrollBar";
 import Footer from "./components/Footer";
 import GlobalLoader from "@/components/GlobalLoader";
 import MotionCursor from "@/components/MotionCursor";
+import AIButton from "@/components/Ai-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <MotionCursor />
         <Header />
         {children}
+        <AIButton />
         <ScrollBar />
         <Footer />
       </body>
