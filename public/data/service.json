@@ -28,30 +28,31 @@
   },
   {
     "id": "2",
-    "title": "Snake Game",
-    "description": "Develop the game just for study purpose",
-    "img": "/images/service_1.webp",
-    "details": [
-      "The Snake Game is a classic project designed to strengthen programming skills and logical thinking. It is built for learning and fun, making it perfect for beginners and enthusiasts.",
-      "Players control the snake to eat food and grow longer while avoiding collisions with walls or itself. Each step improves reflexes and sharpens problem-solving ability.",
-      "This project demonstrates how simple logic and creativity can come together to create an enjoyable and interactive experience."
-    ],
-    "servicesDetails": [
-      {
-        "id": "0",
-        "title": "Services Process",
-        "description": "Our game development process focuses on simplicity, functionality, and learning value.",
-        "points": [
-          "Design the core logic for snake movement",
-          "Implement food generation and scoring system",
-          "Add collision detection for walls and snake body",
-          "Enhance gameplay with increasing difficulty levels",
-          "Make the interface clean and responsive",
-          "Provide code as an educational reference"
-        ]
-      }
-    ]
-  },
+    "title": "SK-Shop",
+    "description": "A trusted neighborhood grocery store providing quality daily essentials, fresh products, and excellent customer service.",
+    "img": "/images/service_2.webp",
+    "projectLink":"https://muththaya-stores-client-git-main-karthicksanthosh1999s-projects.vercel.app/",
+  "details": [
+    "SK-Shop is a family-owned grocery store dedicated to serving the local community with fresh vegetables, fruits, dairy products, and household essentials.",
+    "Our goal is to provide customers with quality products at affordable prices while ensuring a friendly and reliable shopping experience.",
+    "With a wide variety of daily necessities and grocery items, SK-Shop has become a convenient destination for families and individuals."
+  ],
+  "servicesDetails": [
+    {
+      "id": "0",
+      "title": "Our Services",
+      "description": "We focus on providing quality products, customer satisfaction, and convenient shopping.",
+      "points": [
+        "Fresh fruits and vegetables available daily",
+        "Wide range of grocery and household essentials",
+        "Quality dairy products and packaged foods",
+        "Affordable prices with regular stock updates",
+        "Friendly customer service and assistance",
+        "Convenient shopping for daily needs"
+      ]
+    }
+  ]
+},
   {
     "id": "3",
     "title": "JK Chat Bot",

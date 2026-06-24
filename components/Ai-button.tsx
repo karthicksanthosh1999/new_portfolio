@@ -1,10 +1,14 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import robotImage from "@/public/ai.png";
+import { usePathname } from 'next/navigation';
 
 const AIButton = () => {
-  
+  const path = usePathname().slice(1);
   return (
+    path === "ai" ? null : 
     <div className="fixed bottom-16 right-2 z-50">
       <div className="relative w-[100px] h-[100px]">
         <Link

@@ -78,5 +78,21 @@
     "category": "AI",
     "color": "#ccc",
     "percentage": "20"
+  },
+  {
+    "id": "11",
+    "icons": "./images/skill_11.png",
+    "title": "Docker",
+    "category": "DevOps",
+    "color": "#ccc",
+    "percentage": "80"
+  },
+  {
+    "id": "12",
+    "icons": "./images/skill_12.png",
+    "title": "AWS",
+    "category": "DevOps",
+    "color": "#ccc",
+    "percentage": "20"
   }
 ]
