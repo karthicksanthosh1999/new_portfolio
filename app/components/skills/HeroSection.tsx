@@ -85,10 +85,14 @@ export default function HeroSection() {
               </motion.p>
             </div>
             <div className="flex gap-5 flex-wrap">
-              <button className="py-2 px-5 flex items-center justify-center gap-5 text-blue-600 border border-blue-600 cursor-pointer transition duration-300 ease-in hover:bg-blue-600 rounded-full hover:text-white">
-                Download
-                <FaDownload />
-              </button>
+            <a
+              href="/Karthick.pdf"
+              download="Karthick_S_Resume.pdf"
+              className="py-2 px-5 flex items-center justify-center gap-2 text-blue-600 border border-blue-600 cursor-pointer transition duration-300 ease-in hover:bg-blue-600 rounded-full hover:text-white"
+            >
+              Download
+              <FaDownload />
+            </a>
               <div className="flex items-center gap-5">
                 {mediaSection &&
                   mediaSection.map((item, idx) => (

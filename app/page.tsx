@@ -34,11 +34,11 @@ export default function Home() {
       {/* SKILLS SECTION */}
       <Skills />
       {/* RECENT WORK SECTION */}
-      <div
+      {/* <div
         className=" w-full flex items-center justify-center flex-col space-y-5 md:p-20 p-2 bg-[#0F0715]"
         id="blog">
         <Portfolio />
-      </div>
+      </div> */}
       {/* CONTACT FORM */}
       <div className="bg-black md:py-20 py-10" id="contact">
         <div className="w-full container mx-auto max-w-[1400px]">

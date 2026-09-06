@@ -1,9 +1,11 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { LocationEdit, PhoneCall } from "lucide-react";
-import React from "react";
 import { BsEnvelope } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const infro = [
@@ -27,12 +29,48 @@ const Contact = () => {
     },
   ];
 
+const handleSubmit = async (
+  event: React.FormEvent<HTMLFormElement>
+) => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+
+  const formData = new FormData(form);
+
+  const templateParams = {
+    first_name: formData.get("first_name"),
+    last_name: formData.get("last_name"),
+    email: formData.get("email"),
+    mobile: formData.get("mobile"),
+    message: formData.get("message"),
+  };
+
+  try {
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      templateParams,
+      {
+        publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      }
+    );
+
+    alert("Message sent successfully!");
+
+    form.reset();
+  } catch (error) {
+    console.error("EmailJS Error:", error);
+    alert("Failed to send message.");
+  }
+};
+
   return (
     <div className="w-full h-fit flex md:flex-row flex-col items-center justify-center">
       <div className="lg:w-1/2 w-full">
         <div className="bg-[#140C1C] sm:p-5 p-3 m-3">
           {/* CONTACT FORM */}
-          <form className="grid grid-cols-1 gap-5">
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-5">
             <div className="flex items-center justify-center flex-col space-y-3">
               <div className="py-5">
                 <h1 className="py-2 bg-gradient-to-r from-[#8750f7] to-[white] inline-block text-transparent bg-clip-text md:text-5xl text-4xl font-extrabold text-center">
@@ -50,11 +88,15 @@ const Contact = () => {
                 className="text-lg placeholder:text-lg text-white h-15"
                 placeholder="First Name"
                 type="text"
+                 name="first_name"
+                 required
               />
               <Input
                 className="text-lg placeholder:text-lg text-white h-15"
                 placeholder="Last Name"
                 type="text"
+                 name="last_name"
+                 required
               />
             </div>
             <div className="flex gap-5 md:flex-row flex-col">
@@ -62,16 +104,22 @@ const Contact = () => {
                 className="text-lg placeholder:text-lg text-white h-15"
                 placeholder="Email"
                 type="email"
+                 name="email"
+                 required
               />
               <Input
                 className="text-lg placeholder:text-lg text-white h-15"
                 placeholder="Mobile"
                 type="tel"
+                 name="mobile"
+                 required
               />
             </div>
             <Textarea
               placeholder="Message"
               className="text-lg placeholder:text-lg text-white"
+              name="message"
+              required
             />
             <div className="flex items-center justify-center">
               <Button

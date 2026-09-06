@@ -1,0 +1,193 @@
+{
+  "personal": {
+    "name": "Karthick S",
+    "title": "Full Stack Developer",
+    "email": "karthick.santhosh1999@gmail.com",
+    "phone": "8220942384",
+    "linkedin": "https://www.linkedin.com/in/karthick-s-278678241/",
+    "github": "https://github.com/karthicksanthosh1999",
+    "portfolio": "https://new-portfolio-ten-topaz-66.vercel.app/"
+  },
+
+  "summary": "Full Stack Developer with 3.6 years of experience designing and developing scalable, responsive, and high-performance web applications using Next.js, TypeScript, Node.js, and Express.js. Skilled in RESTful APIs, secure authentication, role-based access control, database-driven applications, state management, performance optimization, clean architecture, and AI-powered applications.",
+
+  "experience": [
+    {
+      "company": "Scita Solutions",
+      "role": "Full Stack Developer",
+      "location": "Bangalore",
+      "startDate": "January 2025",
+      "endDate": "Present",
+      "responsibilities": [
+        "Contributed to enterprise applications including the SCITA Website and ATMS.",
+        "Designed and developed responsive and scalable user interfaces using ReactJS, Tailwind CSS, and Material UI.",
+        "Built and maintained RESTful APIs using Node.js and Express.js.",
+        "Implemented authentication and authorization.",
+        "Implemented role-based access control.",
+        "Worked on secure and efficient frontend-backend data flow."
+      ]
+    }
+  ],
+
+  "skills": {
+    "languages": [
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3"
+    ],
+    "frontend": [
+      "ReactJS",
+      "NextJS",
+      "Tailwind CSS",
+      "Redux",
+      "TanStack Query",
+      "Zod",
+      "ShadCN"
+    ],
+    "backend": [
+      "NodeJS",
+      "ExpressJS",
+      "Prisma",
+      "JWT",
+      "LangChain",
+      "OpenRouter",
+      "Swagger"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "testing": [
+      "Vitest"
+    ],
+    "tools": [
+      "VS Code",
+      "Postman",
+      "GitHub"
+    ],
+    "cloud": [
+      "AWS EC2",
+      "AWS S3",
+      "AWS IAM"
+    ]
+  },
+
+  "projects": [
+    {
+      "name": "SciToll",
+      "type": "Professional Project",
+      "role": "Frontend Developer",
+      "technologies": [
+        "ReactJS",
+        "TypeScript",
+        "Tailwind CSS",
+        "NodeJS",
+        "Express",
+        "PostgreSQL"
+      ],
+      "description": "A toll management system for monitoring toll-gate devices and transactions.",
+      "features": [
+        "Tracked vehicle movements.",
+        "Managed toll collections.",
+        "Managed transaction details across toll plazas.",
+        "Developed audit and reporting modules.",
+        "Monitored collected revenue.",
+        "Identified transaction discrepancies.",
+        "Built responsive dashboards for real-time monitoring and operational management."
+      ]
+    },
+
+    {
+      "name": "ATMS",
+      "fullName": "Advanced Traffic Management System",
+      "type": "Professional Project",
+      "role": "Frontend Developer",
+      "technologies": [
+        "ReactJS",
+        "JavaScript",
+        "Redux",
+        "NodeJS",
+        "Express",
+        "PostgreSQL"
+      ],
+      "features": [
+        "Developed dashboards for data visualization.",
+        "Built responsive interfaces using ReactJS and Tailwind CSS.",
+        "Implemented authentication.",
+        "Implemented role-based access control.",
+        "Focused on clean architecture and performance."
+      ]
+    },
+
+    {
+      "name": "AI-Powered Task Tracker",
+      "type": "Personal Project",
+      "role": "Full Stack Developer",
+      "technologies": [
+        "NextJS",
+        "ReactJS",
+        "TypeScript",
+        "TailwindCSS",
+        "ShadCN",
+        "NodeJS",
+        "PostgreSQL",
+        "LangChain",
+        "OpenRouter",
+        "AI APIs"
+      ],
+      "description": "An AI-powered expense tracking application for managing expenses, budgets, goals, and spending insights.",
+      "features": [
+        "Expense management.",
+        "Budget management.",
+        "Goal management.",
+        "Spending insights.",
+        "Expense data analysis.",
+        "Exported expense data in multiple formats.",
+        "AI-driven recommendations.",
+        "Identified spending patterns.",
+        "Suggested better financial decisions.",
+        "Built scalable and responsive architecture.",
+        "Focused on clean code and performance."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Latha Mathavan Engineering College",
+      "degree": "B.E. Mechanical Engineering",
+      "percentage": "79%",
+      "location": "Madurai, Tamil Nadu",
+      "year": 2021
+    }
+  ],
+
+  "certifications": [
+    "Meta Front-End Developer Professional Certificate",
+    "Introduction to Front-End Development",
+    "Basics of React"
+  ],
+
+  "professionalStrengths": [
+    "Full Stack Web Development",
+    "Responsive UI Development",
+    "RESTful API Development",
+    "Authentication and Authorization",
+    "Role-Based Access Control",
+    "Database Integration",
+    "State Management",
+    "Performance Optimization",
+    "Clean Architecture",
+    "AI-Powered Applications"
+  ],
+
+  "careerFocus": [
+    "Full Stack Development",
+    "Next.js Development",
+    "React Development",
+    "Node.js Development",
+    "TypeScript Development",
+    "AI-powered applications"
+  ]
+}

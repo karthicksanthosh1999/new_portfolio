@@ -3,7 +3,7 @@ import AnimatedCounter from "./AnimatedCounter";
 const stats = [
   {
     label: "Year of Experience",
-    value: 2,
+    value: 3,
     suffix: "+",
   },
   {
